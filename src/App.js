@@ -13,7 +13,7 @@ class App extends React.Component{
   }
 
 handleSubmit = e => {
-  fetch("/", {
+  fetch("https://app.netlify.com/sites/eager-spence-755c8e", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({ "form-name": "contact", ...this.state })
